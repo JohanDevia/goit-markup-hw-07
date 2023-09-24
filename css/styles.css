@@ -11,24 +11,32 @@ body {
   font-family: "Roboto", sans-serif;
   color: black;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+.header {
+  border: 1px;
+  border-bottom-style: solid;
+  border-color: rgba(236, 236, 236, 1);
+}
 
-.main-link {
+.header__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.173;
   color: rgba(33, 150, 243, 1);
+  padding: 24px 0px;
+  margin: 0 93px 0 0;
 }
-.main-link:focus {
+.header__logo:focus {
   color: rgba(33, 150, 243, 1);
   outline: none;
 }
-.navigations {
+.nav__link {
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -37,17 +45,17 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   position: relative;
 }
-.navigations:hover {
+.nav__link:hover {
   color: rgba(33, 150, 243, 1);
 }
-.navigations:focus {
+.nav__link:focus {
   color: rgba(33, 150, 243, 1);
   outline: none;
 }
-.navigations .current {
+.nav__link--current {
   color: rgba(33, 150, 243, 1);
 }
-.current::after {
+.nav__link--current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -62,32 +70,26 @@ body {
   visibility: hidden;
   font-size: 0%;
 }
-.list-title {
+.section-title__items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.links {
+.nav__item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.172;
   color: rgba(117, 117, 117, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-.list-active {
-  list-style: none;
-}
-.links:hover {
+.nav__item:hover {
   color: rgba(33, 150, 243, 1);
 }
-.links:focus {
+.nav__item:focus {
   outline: none;
   color: rgba(33, 150, 243, 1);
 }
-.main-header {
-  text-align: center;
-}
-.button-contact {
+.btn-contact {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -96,60 +98,50 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   cursor: pointer;
+  width: 261px;
+  margin-bottom: 190px;
+  padding: 10px 32px 10px 32px;
 }
-.skills {
+.skills__items {
   list-style: none;
   font-size: 14px;
   line-height: 1.714;
   color: rgba(117, 117, 117, 1);
+  display: flex;
+  margin: 95px 0px 0px;
+  column-gap: 30px;
+  padding: 0;
 }
-.skill-attention {
+.skills-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
   color: rgba(33, 33, 33, 1);
 }
-.skill-puntuality {
+.skill__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
   color: rgba(33, 33, 33, 1);
 }
-.skill-planning {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  color: rgba(33, 33, 33, 1);
-}
-.skill-technology {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  color: rgba(33, 33, 33, 1);
-}
-.header-business {
+.section-business__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.171;
   color: rgba(33, 33, 33, 1);
 }
-.businesses {
-  list-style: none;
+.section-business {
+  padding: 94px 0;
 }
-.header-ourteam {
+.section-team__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.171;
   color: rgba(33, 33, 33, 1);
   text-align: center;
+  margin-top: 94px;
 }
-.teams {
-  background-color: rgba(245, 244, 250, 1);
-}
-.team {
-  list-style: none;
-}
-.header-team {
+.section-team__member-heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.171;
@@ -229,44 +221,38 @@ body {
   color: rgba(117, 117, 117, 1);
   margin: 0%;
 }
-.box-tl {
-  border: 1px;
-  border-bottom-style: solid;
-  border-color: rgba(236, 236, 236, 1);
-}
-.topline {
+.nav {
   border: 1px;
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
 }
-.box-logo {
-  padding: 24px 0px;
-  margin: 0 93px 0 0;
-}
-.box-nav {
+.nav__links {
   display: flex;
   margin: 0 306px 0 0;
   padding: 32px 0px;
   column-gap: 50px;
+  list-style: none;
 }
-.box-links {
+.nav__items {
   display: flex;
   align-items: center;
   margin: 32px 19px 32px 0px;
   padding: 0;
   column-gap: 30px;
+  list-style: none;
 }
-.svg-links {
+.nav__item-svg {
   margin: auto 10px auto 0;
 }
-.box-title {
+.section-title {
   background-color: rgba(47, 48, 58, 1);
   display: flex;
   justify-content: center;
   padding: 0;
+  text-align: center;
 }
-.title-bg {
+.section-title--bg {
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
@@ -277,7 +263,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.box-h1 {
+.section-title__heading {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -288,25 +274,10 @@ body {
   padding: 200px 0 0;
   text-align: center;
 }
-.box-bc {
-  width: 261px;
-  margin-bottom: 190px;
-  padding: 10px 32px 10px 32px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.box-skills {
-  display: flex;
-  margin: 95px 0px 0px;
-  column-gap: 30px;
-  padding: 0;
-}
 svg {
   fill: currentColor;
 }
-.box-svg {
+.skills-svg {
   width: 270px;
   height: 120px;
   background-color: rgba(245, 244, 250, 1);
@@ -314,57 +285,46 @@ svg {
   border-color: rgb(245, 244, 250);
   padding: 25px 100px;
 }
-.box-atention {
+.skills__item {
   width: 270px;
 }
-.box-puntuality {
-  width: 270px;
-}
-.box-planning {
-  width: 270px;
-}
-.box-technology {
-  width: 270px;
-}
-.box-hb {
+.heading-container {
   width: 371px;
   height: 46px;
   margin: 0px 409px 55px 420px;
 }
-.box-business {
+.business__item {
+  list-style: none;
   display: flex;
   padding: 0%;
   gap: 30px;
   position: relative;
 }
-.box-business > .bg-business {
+.business__item > .business__item--bg {
   display: flex;
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   align-items: center;
   justify-content: center;
   margin: 0;
   bottom: 0%;
-}
-.text-busines {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.box-teams {
+.section-team {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
+  background-color: rgba(245, 244, 250, 1);
 }
-.box-ot {
-  margin-top: 94px;
-}
-.box-team {
+.section-team__members {
+  list-style: none;
   display: flex;
   padding-top: 50px;
   padding-left: 0;
@@ -372,7 +332,7 @@ svg {
   gap: 37px;
   margin: 0%;
 }
-.team-member {
+.section-team__member {
   background-color: rgba(255, 255, 255, 1);
 }
 .icon {

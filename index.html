@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="topline container">
-        <a class="main-link box-logo" href="./index.html">webstudio</a>
-        <ul class="navigations box-nav">
+    <header class="header">
+      <nav class="nav container">
+        <a class="header__logo" href="./index.html">webstudio</a>
+        <ul class="nav__links">
           <li>
-            <a class="navigations current" href="./index.html">Estudio</a>
+            <a class="nav__link nav__link--current" href="./index.html"
+              >Estudio</a
+            >
           </li>
           <li>
-            <a class="navigations" href="./portfolio.html">Portafolio</a>
+            <a class="nav__link" href="./portfolio.html">Portafolio</a>
           </li>
-          <li><a class="navigations" href="#">Contacto</a></li>
+          <li><a class="nav__link" href="#">Contacto</a></li>
         </ul>
-        <ul class="box-links">
-          <li class="list-active">
-            <a class="links" href="mailto:info@devstudio.com"
-              ><svg class="svg-links" width="16" height="12">
+        <ul class="nav__items">
+          <li>
+            <a class="nav__item" href="mailto:info@devstudio.com"
+              ><svg class="nav__item-svg" width="16" height="12">
                 <use
                   href="./images/images-hw-4/contac-logo/contac-logo.svg#icon-sobre"
                 ></use>
@@ -34,9 +36,9 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="list-active">
-            <a class="links" href="tel:+525555296000"
-              ><svg class="svg-links" width="10" height="16">
+          <li>
+            <a class="nav__item" href="tel:+525555296000"
+              ><svg class="nav__item-svg" width="10" height="16">
                 <use
                   href="./images/images-hw-4/contac-logo/contac-logo.svg#icon-telfono-inteligente"
                 ></use>
@@ -47,72 +49,70 @@
         </ul>
       </nav>
     </header>
-    <main id="main_hero">
-      <section class="main-header box-title title-bg">
+    <main id="main-hero">
+      <section class="section-title section-title--bg">
         <div class="container">
-          <ul class="list-title">
+          <ul class="section-title__items--">
             <li>
-              <h1 class="box-h1">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+              <h1 class="section-title__heading">
+                SOLUCIONES EFICACES PARA SU NEGOCIO
+              </h1>
             </li>
             <li>
-              ><button
-                data-modal-open
-                class="button-contact box-bc"
-                type="button"
-              >
+              ><button data-modal-open class="btn-contact" type="button">
                 Solicite nuestro servicio
               </button>
             </li>
           </ul>
         </div>
       </section>
-      <section id="main_skills">
+      <section id="skills">
         <div class="container">
-          <ul class="skills box-skills">
-            <li class="box-atention">
-              <svg class="box-svg">
+          <ul class="skills__items">
+            <li class="skills__item">
+              <svg class="skills-svg">
                 <use
                   href="./images/images-hw-4/skills-logos/logos/skill-logos.svg#icon-antena"
                 ></use>
               </svg>
-              <h3 class="skill-attention">ATENCIÓN A LOS DETALLES</h3>
+              <h3 class="skill__heading">ATENCIÓN A LOS DETALLES</h3>
               <p>
                 Nos adentramos en todos los detalles y procesos de su negocio,
                 para así desarrollar una solución a su medida.
               </p>
             </li>
-            <li class="box-puntuality">
-              <svg class="box-svg">
+            <li class="skills__item">
+              <svg class="skills-svg">
                 <use
                   href="./images/images-hw-4/skills-logos/logos/skill-logos.svg#icon-reloj"
                 ></use>
               </svg>
-              <h3 class="skill-puntuality">PUNTUALIDAD</h3>
+              <h3 class="skill__heading">PUNTUALIDAD</h3>
               <p>
                 Con nosotros, usted puede sentirse seguro y protegido. Un
                 principio importante de la empresa: respetar su tiempo y
                 respetar los plazos acordados.
               </p>
             </li>
-            <li class="box-planning">
-              <svg class="box-svg">
+            <li class="skills__item">
+              <svg class="skills-svg">
                 <use
                   href="./images/images-hw-4/skills-logos/logos/skill-logos.svg#icon-diagrama"
                 ></use>
               </svg>
-              <h3 class="skill-planning">PLANIFICACIÓN</h3>
+              <h3 class="skill__heading">PLANIFICACIÓN</h3>
               <p>
                 Usted podrá observar y participar en cada fase del desarrollo y
                 aplicación de soluciones.
               </p>
             </li>
-            <li class="box-technology">
-              <svg class="box-svg">
+            <li class="skills__item">
+              <svg class="skills-svg">
                 <use
                   href="./images/images-hw-4/skills-logos/logos/skill-logos.svg#icon-astronauta"
                 ></use>
               </svg>
-              <h3 class="skill-technology">TEGNOLOGÍA MODERNA</h3>
+              <h3 class="skill__heading">TEGNOLOGÍA MODERNA</h3>
               <p>
                 Usamos herramientas innovadoras para resolver las tareas
                 asignadas. Es hora de simplificar los procesos laborales.
@@ -121,48 +121,50 @@
           </ul>
         </div>
       </section>
-      <section id="main_business" class="section">
+      <section id="main_business" class="section-business">
         <div class="container">
-          <h2 class="header-business box-hb">A qué nos dedicamos</h2>
-          <ul class="businesses box-business">
-            <li class="box-business">
+          <h2 class="section-business__heading heading-container">
+            A qué nos dedicamos
+          </h2>
+          <ul class="business__item">
+            <li class="business__item">
               <img
                 src="images/images-hw-1/programacionweb.jpg"
                 alt="Programacion web desde ordenadores"
                 width="370"
               />
-              <p class="bg-business text-busines">Aplicaciones de Escritorio</p>
+              <p class="business__item--bg">Aplicaciones de Escritorio</p>
             </li>
-            <li class="box-business">
+            <li class="business__item">
               <img
                 src="images/images-hw-1/programacionwebparamoviles.jpg"
                 alt="Programacion para dispositivos moviles"
                 width="370"
               />
-              <p class="bg-business text-busines">APLICACIONES MÓVILES</p>
+              <p class="business__item--bg">APLICACIONES MÓVILES</p>
             </li>
-            <li class="box-business">
+            <li class="business__item">
               <img
                 src="images/images-hw-1/programacionentabletas.jpg"
                 alt="programacios desde tabletas"
                 width="370"
               />
-              <p class="bg-business text-busines">Soluciones de Diseño</p>
+              <p class="business__item--bg">Soluciones de Diseño</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="teams box-teams">
+      <section class="section-team">
         <div class="container">
-          <h3 class="header-ourteam box-ot">Nuestro Equipo</h3>
-          <ul class="team box-team">
-            <li class="team-member">
+          <h3 class="section-team__heading">Nuestro Equipo</h3>
+          <ul class="section-team__members">
+            <li class="section-team__member">
               <img
                 src="images/images-hw-1/fotografiaandrescubo.jpg"
                 alt="Andres  Cubo Diseñador de productos"
                 width="270"
               />
-              <h3 class="header-team">Andrés Cubo</h3>
+              <h3 class="section-team__member-heading">Andrés Cubo</h3>
               <p class="text-team">Diseñador de Productos</p>
               <ul class="box-icon">
                 <li class="icon-iten">
@@ -203,13 +205,13 @@
                 </li>
               </ul>
             </li>
-            <li class="team-member">
+            <li class="section-team__member">
               <img
                 src="images/images-hw-1/fotografiacarlapalacios.jpg"
                 alt="Carla Palacios Desarrolladora Frontend"
                 width="270"
               />
-              <h3 class="header-team">Carla Palacios</h3>
+              <h3 class="section-team__member-heading">Carla Palacios</h3>
               <p class="text-team">Desarrolladora Frontend</p>
               <ul class="box-icon">
                 <li class="icon-iten">
@@ -250,13 +252,13 @@
                 </li>
               </ul>
             </li>
-            <li class="team-member">
+            <li class="section-team__member">
               <img
                 src="images/images-hw-1/fotografiamariodorado.jpg"
                 alt="mario Dorado Marketing"
                 width="270"
               />
-              <h3 class="header-team">Mario Dorado</h3>
+              <h3 class="section-team__member-heading">Mario Dorado</h3>
               <p class="text-team">Marketing</p>
               <ul class="box-icon">
                 <li class="icon-iten">
@@ -297,13 +299,13 @@
                 </li>
               </ul>
             </li>
-            <li class="team-member">
+            <li class="section-team__member">
               <img
                 src="images/images-hw-1/fotografiapablomijangos.jpg"
                 alt="Pablo Mijangos Diseñador IU"
                 width="270"
               />
-              <h3 class="header-team">Pablo Mijangos</h3>
+              <h3 class="section-team__member-heading">Pablo Mijangos</h3>
               <p class="text-team">Diseñador IU</p>
               <ul class="box-icon">
                 <li class="icon-iten">
