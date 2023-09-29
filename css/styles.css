@@ -32,8 +32,7 @@ body {
   padding: 24px 0px;
   margin: 0 93px 0 0;
 }
-.header__logo:focus {
-  color: rgba(33, 150, 243, 1);
+.logo:focus {
   outline: none;
 }
 .nav__link {

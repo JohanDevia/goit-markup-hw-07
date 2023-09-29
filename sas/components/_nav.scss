@@ -1,0 +1,18 @@
+.nav {
+  border: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.173;
+  color: rgba(33, 150, 243, 1);
+  padding: 24px 0px;
+  margin: 0 93px 0 0;
+  .logo:focus {
+    outline: none;
+  }
+}
