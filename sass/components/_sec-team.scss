@@ -1,0 +1,77 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background-color: $team-bg-color;
+}
+.team__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.171;
+  color: $heading-color;
+  text-align: center;
+  margin-top: 94px;
+}
+.team__members {
+  list-style: none;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 0;
+  padding-bottom: 94px;
+  gap: 37px;
+  margin: 0%;
+}
+.team__member {
+  background-color: $white-color;
+}
+.team__member-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.171;
+  color: $heading-color;
+  text-align: center;
+}
+.team__paragraph {
+  font-size: 16px;
+  line-height: 1.171;
+  color: $gray-color;
+  text-align: center;
+}
+.icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0 32px;
+  padding: 16px 0 30px 0;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms $cubic-bezier 250ms;
+}
+.icon__container {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover {
+    background-color: $active-color;
+  }
+  &:focus-within {
+    background-color: $active-color;
+    outline: none;
+  }
+}
+.icon__container:hover .icon {
+  fill: $white-color;
+}
+
+.icon__container:focus-within .icon {
+  fill: $white-color;
+  outline: none;
+}
