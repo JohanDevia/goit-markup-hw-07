@@ -1,0 +1,150 @@
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    width: 145px;
+    height: 31px;
+    margin: 0px 0px 9px 0px;
+    padding: 0;
+    column-gap: 30px;
+  }
+  &__items {
+    width: 231px;
+    height: 100px;
+    padding: 0;
+    list-style: none;
+  }
+}
+.address__item {
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
+.address__item-email {
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
+.address__item-tel {
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
+.networks {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin: 0 0 0 70px;
+  &__heading {
+    font-size: 14px;
+    line-height: 1.172;
+    color: $white-color;
+  }
+  &__items {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms $cubic-bezier 250ms;
+    &:hover {
+      background-color: rgba(33, 150, 243, 1);
+    }
+    &:focus-within {
+      background-color: rgba(33, 150, 243, 1);
+      outline: none;
+    }
+  }
+  &__logo {
+    width: 20px;
+    height: 20px;
+    color: $white-color;
+  }
+}
+.suscriptions {
+  width: 570px;
+  padding: 0 0 0 93px;
+  box-sizing: content-box;
+  &__heading {
+    color: $white-color;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
+.form-suscriptions {
+  display: flex;
+  &__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    transition: border 250ms $cubic-bezier;
+    color: $white-color;
+    &:hover {
+      border: 1px solid $active-color;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $active-color;
+    }
+  }
+  &__btn {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: $white-color;
+    background: $active-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 12px;
+    padding: 0;
+    gap: 20px;
+    &-icon {
+      width: 24px;
+      height: 24px;
+      fill: $white-color;
+      padding: auto;
+    }
+  }
+}
